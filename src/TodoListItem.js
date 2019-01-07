@@ -1,6 +1,7 @@
 import React from 'react';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import '../node_modules/font-awesome/css/font-awesome.min.css'; 
 
 class TodoListItem extends React.Component {
     constructor(props) {
@@ -22,7 +23,9 @@ class TodoListItem extends React.Component {
       return(
         <li className="list-group-item ">
           <div className={todoClass}>
-            <span className="glyphicon glyphicon-ok icon" aria-hidden="true" onClick={this.onClickDone}></span>
+            <span className="glyphicon glyphicon-ok icon" aria-hidden="true" onClick={this.onClickDone}>
+              <i className="fa fa-check"></i>
+            </span>
             {this.props.item.value}
             <button type="button" className="close" onClick={this.onClickClose}>&times;</button>
           </div>
