@@ -1,7 +1,8 @@
 import React from 'react';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
-import '../node_modules/font-awesome/css/font-awesome.min.css'; 
+import '../node_modules/font-awesome/css/font-awesome.min.css';
+import EditableLabel from './EditableLabel';
 
 class TodoListItem extends React.Component {
     constructor(props) {
@@ -26,7 +27,10 @@ class TodoListItem extends React.Component {
             <span className="glyphicon glyphicon-ok icon" aria-hidden="true" onClick={this.onClickDone}>
               <i className="fa fa-check"></i>
             </span>
-            {this.props.item.value}
+            <EditableLabel text={this.props.item.value}
+                labelClassName={todoClass}
+                inputMaxLength='50'
+            />
             <button type="button" className="close" onClick={this.onClickClose}>&times;</button>
           </div>
         </li>     

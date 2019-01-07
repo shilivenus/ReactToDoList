@@ -55,3 +55,6 @@ ul>li:hover {
   margin: 6px 10px 6px 0;
 }
 
+.inline {
+  display: inline;
+}
