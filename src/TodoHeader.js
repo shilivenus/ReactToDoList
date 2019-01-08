@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.css';
 
 class TodoHeader extends React.Component {
     render () {

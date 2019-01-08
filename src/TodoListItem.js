@@ -1,5 +1,4 @@
 import React from 'react';
-import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import '../node_modules/font-awesome/css/font-awesome.min.css';
 import EditableLabel from './EditableLabel';
